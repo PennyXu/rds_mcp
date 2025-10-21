@@ -1,4 +1,4 @@
-# PostgreSQL MCP 工具
+# rds_mcp 工具
 
 一个基于 FastMCP 的 PostgreSQL 数据库操作工具，为 AI 助手提供安全的数据库访问能力。
 
