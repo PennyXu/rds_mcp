@@ -51,34 +51,16 @@ RDS_DATABASE=your_database_name
 
 ## AI 集成示例
 
-### MCP服务配置文件
+### MCP服务配置文件（需部署服务器）
 
 ```json
 {
 "mcpServers":{
 "rds_interact": {
-    "url":"http://101.37.26.74:8000/sse",
+    "url":"http://服务器公网ip:port/sse",
     "type":"sse/streamableHttp" 
 }
 }
-}
-```
-
-### 在 Cherry Studio Client 中配置方法
-
-```json
-{
-  "mcpServers": {
-    "mcp-OGZjNzFjMjJmZjFk": {
-      "type": "sse",
-      "isActive": true,
-      "name": "阿里云百炼_rds_interact",
-      "baseUrl": "https://dashscope.aliyuncs.com/api/v1/mcps/mcp-OGZjNzFjMjJmZjFk/sse",
-      "headers": {
-        "Authorization": "Bearer ${DASHSCOPE_API_KEY}"
-      }
-    }
-  }
 }
 ```
 
